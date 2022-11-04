@@ -1,0 +1,24 @@
+# Programs that will run after Openbox has started
+
+# Dual screen
+# Need to figure out how to test if second monitor is plugged in
+# .screenlayout/single.sh
+.screenlayout/dual.sh
+
+# Set the wallpaper
+nitrogen --restore &
+
+# Run a Composite Manager
+picom &
+
+# SCIM Support
+# Still don't know what this is lol
+
+# Get that panel fired up
+# If you want to use xfce4 or tint2, whichever just comment
+# xfce4-panel &
+tint2 &
+
+# Let's get conky up
+conky $
+
